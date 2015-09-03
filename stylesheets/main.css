@@ -28,7 +28,7 @@
     font-style: normal;
 }
 body{
-    font-family: 'Aller_Rg';
+    font-family: 'Aller_Rg', sans-serif;
 }
 a{
     text-decoration: none;
@@ -78,15 +78,11 @@ ul li{
     display: inline-block;
 }
 .goods-menu{
-    width: 166px;
-    /*outline: 1px solid olive;*/
+    display: inline-block;
     text-align: justify;
 }
-.goods-menu:after{
-    content: '';
-    height: 0;
-    width: 100%;
-    display: inline-block;
+.goods-menu li{
+    margin-right: 2px;
 }
 .goods-menu li a{
     height: 40px;
@@ -111,7 +107,6 @@ ul li{
     height: 45px;
     width: 100%;
 }
-
 .header .logo{
     font: 26px STHeitiSC, Arial;
     font-weight: normal;
@@ -136,7 +131,6 @@ ul li{
     border: 0;
     background: url(../images/design/zoom-icon.png) no-repeat center;
     cursor: pointer;
-    /*outline: 1px solid red;*/
     float: right;
     display: inline-block;
     margin: 8px 17px 0 0;
@@ -146,7 +140,6 @@ ul li{
     border-right: 1px solid #383838;
     float: right;
     line-height: 45px;
-    /*outline: 1px solid red;*/
     height: 45px;
     padding: 0 22px;
     color: #7e7e7e;
@@ -167,13 +160,11 @@ ul li{
 .menu{
     height: 60px;
     background-color: #ffffff;
-    /*outline: 1px solid red;*/
 }
 .menu li{
     padding: 0 23px;
     text-transform: capitalize;
     border-right: 1px solid #eeeeee;
-    /*outline: 1px solid red;*/
 }
 .menu li a{
     line-height: 60px;
@@ -184,7 +175,6 @@ ul li{
 /*Begin banner*/
 .banner{
     background: url(../images/design/banner-bg.jpg) repeat-x;
-    /*outline: 1px solid red;*/
 }
 .banner .line{
     height: 461px;
@@ -192,7 +182,6 @@ ul li{
 }
 .banner .line .info{
     padding: 66px 0 0 542px;
-    /*outline: 1px solid red;*/
 }
 .banner .line .info h2{
     font: 40px/38px "Aller_Lt";
@@ -217,21 +206,18 @@ ul li{
 .brand-menu li{
     width: 188px;
     height: 90px;
-    /*outline: 1px solid red;*/
     font-size: 18px;
 }
 .brand-menu li a{
     display: inline-block;
     margin-top: 26px;
     color: #979797;
-    /*outline: 1px solid red;*/
     position: relative;
 }
 .brand-menu li a div{
     font-size: 12px;
     color: #5d5d5d;
     padding-top: 7px;
-    /*outline: 1px solid red;*/
 }
 .brand-menu li a:hover div{
     color: #adadad;
@@ -296,7 +282,6 @@ ul li{
 }
 .content .goods{
     padding: 29px 0 7px;
-    /*outline: 1px solid yellow;*/
 }
 .content .goods h2{
     font: 25px Aller_Lt;
@@ -315,7 +300,6 @@ ul li{
 }
 .content .goods .goods-items{
     padding-top: 28px;
-    /*outline: 1px solid green;*/
     text-align: justify;
 }
 div.goods-items:after {
@@ -345,22 +329,26 @@ div.goods-items:after {
     visibility: hidden;
     opacity: 0;
     transition: all 300ms ease-out;
+    -webkit-transition: all 500ms ease-out;
 }
 .description p{
     color: #242424;
     font-size: 18px;
     padding: 13px 0 0 92px;
     transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
 }
 .description:hover > p{
     visibility: hidden;
     opacity: 0;
     transition: all 300ms ease-out;
+    -webkit-transition: all 500ms ease-out;
 }
 .description:hover > p + .goods-menu{
     visibility: visible;
     opacity: 1;
     transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
 }
 .goods-items .goods-item .price{
     position: absolute;
@@ -378,7 +366,6 @@ div.goods-items:after {
     top: 0;
     right: 11px;
 }
-
 /*End of content*/
 /*Begin of footer*/
 .footer{
@@ -403,7 +390,6 @@ div.goods-items:after {
     display: block;
     height: 36px;
     width: 36px;
-    /*background-color: white;*/
 }
 a.fb{
     background: url(../images/design/icons.png) no-repeat 0 0;
