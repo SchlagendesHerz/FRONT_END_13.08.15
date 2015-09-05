@@ -1,0 +1,6 @@
+ul li{
+display: inline;
+}
+.content .goods .goods-items .goods-item{
+display: inline !important;
+}

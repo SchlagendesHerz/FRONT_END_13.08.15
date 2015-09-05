@@ -1,0 +1,14 @@
+.offers .line{
+    text-align-last: justify !important;
+    text-justify: newspaper !important;
+}
+.content .goods .goods-items{
+    text-align-last: justify;
+    text-justify: newspaper;
+}
+.content .goods .goods-items p{
+    text-align-last: left;
+}
+.on-sale{
+    text-align-last: center;
+}
